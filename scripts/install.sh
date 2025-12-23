@@ -14,7 +14,7 @@ CYAN='\033[0;36m'
 NC='\033[0m' # No Color
 
 # Plugin details
-PLUGIN_URL="https://raw.githubusercontent.com/IFAKA/oc-notify/main/audio-notify.js"
+PLUGIN_URL="https://raw.githubusercontent.com/IFAKA/oc-notify/master/audio-notify.js"
 PLUGIN_NAME="audio-notify.js"
 
 # ============================================================================

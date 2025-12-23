@@ -9,7 +9,7 @@ Common issues and solutions for oc-notify.
 Run the test script to check your audio setup:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/main/scripts/test-audio.sh | bash
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/test-audio.sh | bash
 ```
 
 Or if you've cloned the repo:
@@ -248,7 +248,7 @@ ls -la ~/.config/opencode/plugin/audio-notify.js
 **Fix if missing:**
 ```bash
 # Re-run installer
-curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/install.sh | bash
 ```
 
 ---

@@ -5,7 +5,7 @@ Detailed installation instructions for all platforms.
 ## Quick Install (All Platforms)
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/install.sh | bash
 ```
 
 This works on macOS, Linux, and WSL.
@@ -26,14 +26,14 @@ mkdir -p ~/.config/opencode/plugin
 
 ```bash
 curl -o ~/.config/opencode/plugin/audio-notify.js \
-  https://raw.githubusercontent.com/IFAKA/oc-notify/main/audio-notify.js
+  https://raw.githubusercontent.com/IFAKA/oc-notify/master/audio-notify.js
 ```
 
 Or using wget:
 
 ```bash
 wget -O ~/.config/opencode/plugin/audio-notify.js \
-  https://raw.githubusercontent.com/IFAKA/oc-notify/main/audio-notify.js
+  https://raw.githubusercontent.com/IFAKA/oc-notify/master/audio-notify.js
 ```
 
 **3. Verify installation:**
@@ -72,7 +72,7 @@ You should see:
 #### Installation
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/install.sh | bash
 ```
 
 #### What You Get
@@ -93,7 +93,7 @@ System Preferences → Sound → Sound Effects → Alert volume
 #### Installation
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/install.sh | bash
 ```
 
 #### What You Get
@@ -139,7 +139,7 @@ sudo dnf install alsa-utils
 **2. Install the plugin:**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/install.sh | bash
 ```
 
 **3. Test audio:**
@@ -207,7 +207,7 @@ amixer set Master 50%
 New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.config\opencode\plugin"
 
 # Download plugin
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/IFAKA/oc-notify/main/audio-notify.js" `
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/IFAKA/oc-notify/master/audio-notify.js" `
   -OutFile "$env:USERPROFILE\.config\opencode\plugin\audio-notify.js"
 ```
 
@@ -226,7 +226,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/IFAKA/oc-notify/main/a
 Same as Linux:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/install.sh | bash
 ```
 
 #### What You Get
@@ -275,7 +275,7 @@ After OpenCode finishes, you should hear a different sound.
 ### Run Audio Test Script
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/main/scripts/test-audio.sh | bash
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/test-audio.sh | bash
 ```
 
 This tests all available audio methods on your system.
@@ -303,7 +303,7 @@ Edit `~/.config/opencode/opencode.json` and remove the `audio_notifications` sec
 Re-run the installer:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/install.sh | bash
 ```
 
 The installer automatically backs up your existing plugin.
@@ -316,7 +316,7 @@ cp ~/.config/opencode/plugin/audio-notify.js ~/.config/opencode/plugin/audio-not
 
 # Download new version
 curl -o ~/.config/opencode/plugin/audio-notify.js \
-  https://raw.githubusercontent.com/IFAKA/oc-notify/main/audio-notify.js
+  https://raw.githubusercontent.com/IFAKA/oc-notify/master/audio-notify.js
 ```
 
 ---
@@ -345,7 +345,7 @@ Or use wget instead:
 
 ```bash
 wget -O ~/.config/opencode/plugin/audio-notify.js \
-  https://raw.githubusercontent.com/IFAKA/oc-notify/main/audio-notify.js
+  https://raw.githubusercontent.com/IFAKA/oc-notify/master/audio-notify.js
 ```
 
 ---

@@ -7,7 +7,7 @@
 Works on macOS, Linux Desktop, Linux TTY, Windows, and WSL. Install in 30 seconds:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/install.sh | bash
 ```
 
 ---
@@ -33,7 +33,7 @@ No more constant checking!
 **Copy and paste this:**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/main/scripts/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/install.sh | bash
 ```
 
 **That's it!** Start OpenCode and you'll have audio notifications.
@@ -52,7 +52,7 @@ mkdir -p ~/.config/opencode/plugin
 **Step 2:** Download the plugin
 ```bash
 curl -o ~/.config/opencode/plugin/audio-notify.js \
-  https://raw.githubusercontent.com/IFAKA/oc-notify/main/audio-notify.js
+  https://raw.githubusercontent.com/IFAKA/oc-notify/master/audio-notify.js
 ```
 
 **Step 3:** Restart OpenCode
