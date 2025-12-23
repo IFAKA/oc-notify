@@ -64,6 +64,24 @@ opencode
 
 ---
 
+## 🔄 Update & Uninstall
+
+### Quick Update
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/update.sh | bash
+```
+
+### Quick Uninstall
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/uninstall.sh | bash
+```
+
+**Details:** [Installation Guide](docs/INSTALLATION.md#uninstallation)
+
+---
+
 ## ✨ Features
 
 | Feature | Description |
@@ -310,6 +328,50 @@ On startup, the plugin:
 **Why?** If OpenCode requests 10 permissions rapidly, you hear 1 sound, not 10!
 
 </details>
+
+---
+
+## 📋 Quick Reference
+
+### One-Line Commands
+
+```bash
+# Install
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/install.sh | bash
+
+# Update
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/update.sh | bash
+
+# Uninstall (leaves no trace)
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/uninstall.sh | bash
+
+# Test audio
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/test-audio.sh | bash
+```
+
+### Files
+
+```
+Plugin:  ~/.config/opencode/plugin/audio-notify.js
+Config:  ~/.config/opencode/opencode.json (optional)
+```
+
+### Quick Config Examples
+
+**Disable completion sounds:**
+```json
+{ "audio_notifications": { "completion": { "enabled": false } } }
+```
+
+**Use only terminal bell:**
+```json
+{ "audio_notifications": { "permission": { "method": "bell" }, "completion": { "method": "bell" } } }
+```
+
+**Longer cooldowns:**
+```json
+{ "audio_notifications": { "permission": { "cooldown": 10 }, "completion": { "cooldown": 20 } } }
+```
 
 ---
 

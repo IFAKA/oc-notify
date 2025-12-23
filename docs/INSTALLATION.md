@@ -284,23 +284,74 @@ This tests all available audio methods on your system.
 
 ## Uninstallation
 
-### Remove Plugin
+### Automatic Uninstall (Recommended)
+
+**Complete removal with no trace:**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/uninstall.sh | bash
+```
+
+**What it removes:**
+- ✅ Plugin file
+- ✅ Backup files (with confirmation)
+- ✅ Empty directories
+- ✅ Optional: Config section (with confirmation)
+
+**Leaves no trace!**
+
+---
+
+### Manual Uninstall
+
+**1. Remove plugin:**
 
 ```bash
 rm ~/.config/opencode/plugin/audio-notify.js
 ```
 
-### Remove Configuration (Optional)
+**2. Remove backups (optional):**
+
+```bash
+rm ~/.config/opencode/plugin/audio-notify.js.backup.*
+```
+
+**3. Remove config (optional):**
 
 Edit `~/.config/opencode/opencode.json` and remove the `audio_notifications` section.
 
+**4. Cleanup empty directories:**
+
+```bash
+# Only if empty
+rmdir ~/.config/opencode/plugin 2>/dev/null
+rmdir ~/.config/opencode 2>/dev/null
+```
+
 ---
 
-## Upgrading
+## Updating
 
-### To Latest Version
+### Automatic Update (Recommended)
 
-Re-run the installer:
+**Update to latest version:**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/update.sh | bash
+```
+
+**What it does:**
+- ✅ Checks current vs latest version
+- ✅ Backs up current version
+- ✅ Downloads latest version
+- ✅ Verifies installation
+- ✅ Rolls back on failure
+
+---
+
+### Manual Update
+
+**Re-run the installer:**
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/install.sh | bash
@@ -308,7 +359,7 @@ curl -fsSL https://raw.githubusercontent.com/IFAKA/oc-notify/master/scripts/inst
 
 The installer automatically backs up your existing plugin.
 
-### Manual Upgrade
+**Or update directly:**
 
 ```bash
 # Backup existing
