@@ -1,0 +1,46 @@
+{
+  "audio_notifications": {
+    // Master switch - set to false to disable all audio notifications
+    "enabled": true,
+    
+    // Enable detailed logging (helpful for troubleshooting)
+    "debug": false,
+    
+    // Permission request notifications
+    "permission": {
+      // Enable/disable permission sounds
+      "enabled": true,
+      
+      // Audio method: "auto" or specific method
+      // Options: "auto", "bell", "afplay", "speaker-test", "beep", "paplay", "powershell-beep"
+      "method": "auto",
+      
+      // Cooldown between sounds (in seconds)
+      "cooldown": 2,
+      
+      // Tone settings (for tone-based methods like speaker-test, beep)
+      "tone": {
+        "freq": 1000,      // Frequency in Hz (higher = higher pitch)
+        "duration": 150    // Duration in milliseconds
+      },
+      
+      // Bell pattern (for terminal bell method)
+      // Options: "single", "double"
+      "bellPattern": "single"
+    },
+    
+    // Task completion notifications
+    "completion": {
+      "enabled": true,
+      "method": "auto",
+      "cooldown": 5,
+      
+      "tone": {
+        "freq": 600,       // Lower pitch for completion (more pleasant)
+        "duration": 250
+      },
+      
+      "bellPattern": "double"  // Different pattern to distinguish from permission
+    }
+  }
+}

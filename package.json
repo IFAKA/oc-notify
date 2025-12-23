@@ -1,0 +1,26 @@
+{
+  "name": "oc-notify",
+  "version": "1.0.0",
+  "description": "Audio notifications plugin for OpenCode - Get notified when permissions are requested or tasks complete",
+  "main": "audio-notify.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IFAKA/oc-notify.git"
+  },
+  "keywords": [
+    "opencode",
+    "plugin",
+    "audio",
+    "notifications",
+    "terminal",
+    "tty",
+    "cross-platform",
+    "adhd-friendly"
+  ],
+  "author": "IFAKA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IFAKA/oc-notify/issues"
+  },
+  "homepage": "https://github.com/IFAKA/oc-notify#readme"
+}
