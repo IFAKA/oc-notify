@@ -410,3 +410,11 @@ If this helps you, give it a star! ⭐ It helps others discover it.
 [Documentation](docs/) • [Issues](https://github.com/IFAKA/oc-notify/issues)
 
 </div>
+
+---
+
+## Support
+
+If this project is useful to you, you can support my work:
+
+[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/zfaka)
